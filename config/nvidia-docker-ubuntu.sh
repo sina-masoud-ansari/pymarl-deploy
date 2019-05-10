@@ -1,7 +1,15 @@
+url=$1 # pymarl repo url
+dest=$2 # destination dir
+
 bash common/ubuntu/nvidia.sh
 bash common/ubuntu/docker.sh
 bash common/ubuntu/nvidia-docker.sh
-bash common/ubuntu/pymarl.sh $1 $2 # pymarl repo, destination dir
+bash common/ubuntu/pymarl.sh $url $dest
+
+# build container
+cd $dest
+bash docker-build.sh
+cd -
 sudo usermod -aG docker $USER
 
 

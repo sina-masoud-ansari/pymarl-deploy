@@ -1,3 +1,6 @@
+url=$1 # pymarl repo url
+dest=$2 # destination dir
+
 bash common/ubuntu/nvidia.sh
-bash common/ubuntu/pymarl.sh $1 $2 # pymarl repo, destination dir
-bash common/conda.sh $2
+bash common/ubuntu/pymarl.sh $url $dest
+bash common/conda.sh $dest

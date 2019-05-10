@@ -1,11 +1,12 @@
-# pymarl
+url=$1 # pymarl repo url
+dest=$2 # destination dir
+
 sudo apt-get update && apt-get install -y \
         git \
         unzip
 
-git clone $1 $2 # pymarl repo
+git clone $url $dest
 
-cd $2
-bash docker-build.sh
+cd $dest
 bash install_sc2.sh
 cd -

@@ -1,3 +1,4 @@
+pymarl_dir=$1
 conda create -y -n pymarl python=3.5
 conda activate pymarl
-pip install -r $1/pymarl/requirements.txt
+pip install -r $pymarl_dir/requirements.txt
