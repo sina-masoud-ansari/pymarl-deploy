@@ -10,7 +10,7 @@ bash config/common/ubuntu/nvidia-docker.sh
 bash config/common/ubuntu/pymarl.sh $url $dest
 
 # build container
-cd $dest
-bash docker-build.sh
-cd -
 sudo usermod -aG docker $USER
+cd $dest
+sudo bash docker-build.sh
+cd -
