@@ -53,5 +53,4 @@ which can be ignored.
 ### Repositories
 
 The deployment scripts are have been tested with the `https://github.com/sina-masoud-ansari/pymarl` fork as some 
-changes were requried in the original `Dockerfile` and `requirements.txt` were required some changes for
-PyMARL to run correctly.
+changes were requried in the original `Dockerfile` and `requirements.txt` for PyMARL to run correctly.
