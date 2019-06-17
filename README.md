@@ -22,7 +22,8 @@ Similarly:
 bash config/nvidia-conda-ubuntu.sh <REPO> <INSTALL_DIR>
 ```
 
-Will install the NVIDIA pre-requisites before setting up an Anaconda environment named `pymarl`
+will install the NVIDIA pre-requisites before setting up an Anaconda environment named `pymarl` which should then be
+activated before running PyMARL.
 
 **NOTE: This assumes a prexisting Anaconda environment**. One can  be installed from the 
 [Anaconda webiste](https://www.anaconda.com/distribution/#download-section). 
@@ -47,10 +48,20 @@ Note that if you use the Anaconda deployment scripts on Windows, `conda` should 
 BASH environment
 
 PyMARL can be run without a GPU so creating a Docker deployment script is possible and would be
-similar to [config/docker-ubuntu.sh](./config/docker-ubuntu.sh) except for the nvidia-docker step 
+similar to [config/docker-ubuntu.sh](./config/docker-ubuntu.sh) except for the `nvidia-docker` step 
 which can be ignored.
 
 ### Repositories
 
 The deployment scripts are have been tested with the `https://github.com/sina-masoud-ansari/pymarl` fork as some 
-changes were requried in the original `Dockerfile` and `requirements.txt` for PyMARL to run correctly.
+changes were required in the original `Dockerfile` and `requirements.txt` for PyMARL to run correctly.
+
+### Recommended Environments
+
+#### Amazon Web Services
+
+The following images are reccomended on a p2.* and p3.* 
+
+* Deep Learning Base AMI (Ubuntu) with `config/*-ubuntu.sh`
+* Deep Learning AMI (Ubuntu) with `config/*-ubuntu.sh`
+* Ubuntu Server 18.04 LTS with `config/nvidia-*-ubuntu.sh`

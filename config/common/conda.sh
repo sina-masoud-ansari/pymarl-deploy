@@ -3,6 +3,7 @@ if [ "$#" -ne 1 ]; then
 fi
 
 pymarl_dir=$1
+source $(dirname $(which conda))/../etc/profile.d/conda.sh
 conda create -y -n pymarl python=3.5
 conda activate pymarl
 pip install -r $pymarl_dir/requirements.txt
