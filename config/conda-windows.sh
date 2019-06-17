@@ -6,8 +6,8 @@ url=$1 # pymarl repo url
 dest=$2 # destination dir
 
 git clone $url $dest
-conda create -y -n pymarl python=3.5
 #source $(dirname $(which $CONDA_EXE))/../etc/profile.d/conda.sh
+conda create -y -n pymarl python=3.5
 conda activate pymarl
 conda install -y pytorch=0.4.1 cuda90 -c pytorch
 pip install --upgrade pip
