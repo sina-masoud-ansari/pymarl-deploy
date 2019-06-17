@@ -41,6 +41,18 @@ or similar to avoid installing the drivers again.
 
 The scripts expect a BASH environment such as Git Bash or the Windows Subsystem for Linux (untested).
 
+If using Git Bash, you can create a `.bashrc` and add one of the following to it:
+
+```bash
+# Anaconda
+. /c/Users/<USER>/Anaconda3/etc/profile.d/conda.sh
+
+# Miniconda
+. /c/Users/<USER>/AppData/Local/Continuum/miniconda3/etc/profile.d/conda.sh
+```
+
+assuming Anaconda or Miniconda were installed in the default locations in the user's directory.
+
 The GPU configurations for Windows are limited to using Anaconda environments only as 
 [NVIDIA Docker](https://github.com/NVIDIA/nvidia-docker) is not currently supported on Windows.
 
