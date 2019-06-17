@@ -41,7 +41,7 @@ or similar to avoid installing the drivers again.
 
 The scripts expect a BASH environment such as Git Bash or the Windows Subsystem for Linux (untested).
 
-If using Git Bash, you can create a `.bashrc` and add one of the following to it:
+If using Git Bash, you can create `~/.bashrc` and add one of the following to it:
 
 ```bash
 # Anaconda
