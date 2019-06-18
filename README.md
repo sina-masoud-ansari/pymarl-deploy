@@ -39,6 +39,9 @@ or similar to avoid installing the drivers again.
 
 ### Windows
 
+**Note: While the following will help you set up the dependencies for running PyMARL, there are currently unresolved
+runtime issues. It may work with Windows Subsystem for Linux however this hasn't been tested** 
+
 The scripts expect a BASH environment such as Git Bash or the Windows Subsystem for Linux (untested).
 
 If using Git Bash, you can create `~/.bashrc` and add one of the following to it:
