@@ -75,7 +75,7 @@ changes were required in the original `Dockerfile` and `requirements.txt` for Py
 
 #### Amazon Web Services
 
-The following images are reccomended on a p2.* and p3.* 
+The following images are recommended on `p2.*` and `p3.*` instances
 
 * Deep Learning Base AMI (Ubuntu) with `config/*-ubuntu.sh`
 * Deep Learning AMI (Ubuntu) with `config/*-ubuntu.sh`
