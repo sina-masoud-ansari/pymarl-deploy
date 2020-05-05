@@ -17,7 +17,7 @@ will install NVIDIA driver dependencies as well as Docker and NVIDIA Docker on U
 PyMARL Git repository to clone, the second argument is the location to download this repository to e.g.:
 
 ```bash
-bash config/nvidia-docker-ubuntu.sh https://github.com/sina-masoud-ansari/pymarl.git /data/pymarl
+bash config/nvidia-docker-ubuntu.sh git@github.com:sina-masoud-ansari/pymarl.git /data/pymarl
 ```
 
 Similarly:
