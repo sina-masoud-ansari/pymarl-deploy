@@ -14,7 +14,11 @@ bash config/nvidia-docker-ubuntu.sh <REPO> <INSTALL_DIR>
 ```
 
 will install NVIDIA driver dependencies as well as Docker and NVIDIA Docker on Ubuntu. The first argument is the target 
-PyMARL Git repository to clone, the second argument is the location to download this repository to.
+PyMARL Git repository to clone, the second argument is the location to download this repository to e.g.:
+
+```bash
+bash config/nvidia-docker-ubuntu.sh https://github.com/sina-masoud-ansari/pymarl.git /data/pymarl
+```
 
 Similarly:
 
