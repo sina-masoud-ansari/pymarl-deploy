@@ -29,7 +29,7 @@ bash config/nvidia-conda-ubuntu.sh <REPO> <INSTALL_DIR>
 will install the NVIDIA pre-requisites before setting up an Anaconda environment named `pymarl` which should then be
 activated before running PyMARL.
 
-**NOTE: This assumes a prexisting Anaconda environment**. One can  be installed from the 
+**Note: This assumes a prexisting Anaconda environment**. One can  be installed from the 
 [Anaconda webiste](https://www.anaconda.com/distribution/#download-section). 
 [Miniconda](https://docs.conda.io/en/latest/miniconda.html) is a suitable light-weight alternative.   
 
@@ -40,6 +40,8 @@ bash config/docker-ubuntu.sh <REPO> <INSTALL_DIR>
 ```
 
 or similar to avoid installing the drivers again. 
+
+**Note: The NVIDIA dependencies are currently setup for Ubuntu 18.04.** You should be able to change [the nvidia config](./config/common/ubuntu/nvidia.sh) to suit your target system. Note that `nvidia-docker` is not supported on all Ubuntu releases.
 
 ### Windows
 
