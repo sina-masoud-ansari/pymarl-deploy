@@ -1,7 +1,7 @@
 ## PyMARL Deploy
 
 This repository contains scripts to deploy the Python Multi-Agent Reinforcement Learning 
-([PyMARL](https://github.com/oxwhirl/pymarl)) framework to Linux and Windows based systems. 
+([PyMARL](https://github.com/oxwhirl/pymarl)) framework to Linux based systems. 
 PyMARL execution environments can be setup using either [Anaconda](https://www.anaconda.com/) or 
 [Docker](https://www.docker.com/) 
 
