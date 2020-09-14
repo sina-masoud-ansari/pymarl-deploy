@@ -4,7 +4,7 @@ fi
 
 pymarl_dir=$1
 source $(dirname $(which conda))/../etc/profile.d/conda.sh
-conda create -y -n pymarl python=3.5
+conda create -y -n pymarl python=3.7
 conda activate pymarl
 pip install --upgrade pip
 pip install -r $pymarl_dir/requirements.txt
