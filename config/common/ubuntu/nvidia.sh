@@ -1,12 +1,6 @@
-# install system dependencies
-sudo apt-get install -y linux-headers-$(uname -r)
-
-# deb
-deb=cuda-repo-ubuntu1804_10.1.105-1_amd64.deb
-
-# install nvidia driver and  cuda toolkit
-wget  https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/$deb && sudo dpkg -i $deb
+wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-ubuntu1804.pin
+sudo mv cuda-ubuntu1804.pin /etc/apt/preferences.d/cuda-repository-pin-600
 sudo apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/7fa2af80.pub
+sudo add-apt-repository "deb http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/ /"
 sudo apt-get update
-sudo apt-get install -y cuda
-rm $deb
+sudo apt-get -y install cuda
